@@ -1,0 +1,16 @@
+-- AlterTable
+ALTER TABLE "users" ADD COLUMN     "address" TEXT,
+ADD COLUMN     "age" INTEGER NOT NULL DEFAULT 18,
+ADD COLUMN     "birthDate" TIMESTAMP(3),
+ADD COLUMN     "city" TEXT,
+ADD COLUMN     "country" TEXT,
+ADD COLUMN     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ADD COLUMN     "department" TEXT,
+ADD COLUMN     "hireDate" TIMESTAMP(3),
+ADD COLUMN     "isActive" BOOLEAN NOT NULL DEFAULT true,
+ADD COLUMN     "lastLogin" TIMESTAMP(3),
+ADD COLUMN     "phone" TEXT,
+ADD COLUMN     "role" TEXT NOT NULL DEFAULT 'user',
+ADD COLUMN     "salary" DOUBLE PRECISION,
+ADD COLUMN     "updatedAt" TIMESTAMP(3),
+ADD COLUMN     "zipCode" TEXT;
